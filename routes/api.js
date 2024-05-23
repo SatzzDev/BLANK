@@ -1,4 +1,4 @@
-import express from 'express';
+import { Router } from 'express';
 import cors from 'cors';
 import secure from 'ssl-express-www';
 import path from 'path';
@@ -10,8 +10,7 @@ import nulish from 'nulis'
 import fs from 'fs';
 import JXR from 'jxr-canvas';
 
-
-const router = express.Router();
+const router = new Router();
 
 const fetchJson = async (url, options) => {
 try {
