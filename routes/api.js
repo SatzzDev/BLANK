@@ -173,7 +173,7 @@ message: 'input parameter username guildname guildicon membercount avatar, conto
 }
 
 try {
-var image = await new JXR.Welcome()
+var image = new JXR.Welcome()
 .setUsername(username)
 .setGuildName(guildname)
 .setGuildIcon(guildicon)
@@ -206,7 +206,7 @@ message: 'input parameter username guildname guildicon membercount avatar, conto
 }
 
 try {
-var image = await new JXR.Goodbye()
+var image = new JXR.Goodbye()
 .setMemberCount(membercount)
 .setAvatar(avatar)
 .setUsername(username)
@@ -238,7 +238,7 @@ message: 'input parameter username'
 }
 
 try {
-var image = await new JXR.Gura()
+var image = new JXR.Gura()
 .setName(username)
 .toAttachment();
 
